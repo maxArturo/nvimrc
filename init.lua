@@ -5,17 +5,17 @@ spec "user.whichkey"
 spec "user.colorscheme" --validated
 spec "user.devicons"    --validated
 spec "user.telescope" -- need re-evaluate hotkeys
-spec "user.gitsigns" -- need review custom config
 spec "user.harpoon"
 spec "user.illuminate"
 spec "user.nvimtree"
 spec "user.lualine"
 spec "user.navic"
+spec "user.vim-fugitive"
 spec "user.breadcrumbs"
 spec "user.autopairs"
 spec "user.alpha"
 spec "user.project"
-spec "user.toggleterm" -- TODO figure out how to move windows here
+spec "user.toggleterm"
 -- spec "user.treesitter"
 -- spec "user.mason"
 -- spec "user.schemastore"
