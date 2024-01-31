@@ -5,8 +5,8 @@ local M = {
 }
 
 function M.config()
-  -- vim.cmd.colorscheme "darkplus"
-  vim.cmd.colorscheme "darkblue"
+  vim.cmd.colorscheme "darkplus"
+  -- vim.cmd.colorscheme "blue"
 end
 
 return M
