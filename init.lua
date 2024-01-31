@@ -25,7 +25,6 @@ spec "user.toggleterm"
 -- spec "user.comment" -- not touching this for now, it should work with treesitter later
 -- spec "user.indentline" -- not touching this for now, it should work with treesitter later
 -- spec "user.neotest"
--- spec "user.neogit"
 require "user.lazy"
 require "user.keymaps"
 require "user.autocmds"
