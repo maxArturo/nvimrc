@@ -3,7 +3,7 @@ local M = {
   event = "VeryLazy",
 }
 
-function M.config() 
+function M.config()
   require("toggleterm").setup {
     size = 20,
     open_mapping = [[<c-\>]],

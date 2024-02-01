@@ -6,7 +6,6 @@ spec "user.whichkey"
 spec "user.colorscheme" --validated
 spec "user.devicons"    --validated
 spec "user.telescope" -- need re-evaluate hotkeys
-spec "user.harpoon"
 spec "user.illuminate"
 spec "user.nvimtree"
 spec "user.lualine"
@@ -24,6 +23,8 @@ spec "user.schemastore"
 spec "user.cmp"
 spec "user.none-ls"
 spec "user.comment"
+spec "user.slimv"
+spec "user.trouble"
 -- spec "user.neotest"
 spec "user.indentline"
 require "user.lazy"
