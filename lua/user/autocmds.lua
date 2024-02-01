@@ -24,31 +24,47 @@
 --   end,
 -- })
 
--- quick exit and prevent these filetypes from 
--- showing up on buffer lists
+
+local no_list_buf = {
+  "netrw",
+  "Jaq",
+  "qf",
+  "git",
+  "help",
+  "man",
+  "lspinfo",
+  "oil",
+  "spectre_panel",
+  "lir",
+  "DressingSelect",
+  "tsplayground",
+}
+
+local quick_exit = no_list_buf .. {
+  "fugitive",
+  "",
+}
+
+-- quick exit 
 vim.api.nvim_create_autocmd({ "FileType" }, {
-  pattern = {
-    "netrw",
-    "Jaq",
-    "qf",
-    "git",
-    "help",
-    "man",
-    "lspinfo",
-    "oil",
-    "spectre_panel",
-    "lir",
-    "DressingSelect",
-    "tsplayground",
-    "",
-  },
+  pattern = quick_exit,
   callback = function()
     vim.cmd [[
       nnoremap <silent> <buffer> q :close<CR>
-      set nobuflisted
-    ]]
+      ]]
   end,
 })
+
+-- no buflist
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = no_list_buf,
+  callback = function()
+    vim.cmd [[
+      set nobuflisted
+      ]]
+  end,
+})
+
 
 -- keep windows resized
 vim.api.nvim_create_autocmd({ "VimResized" }, {

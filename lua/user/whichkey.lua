@@ -5,8 +5,8 @@ local M = {
 function M.config()
   local mappings = {
     q = { "<cmd>confirm q<CR>", "Quit" },
+    ["qa"] = { "<cmd>qa!<CR>", "Quit All" },
     h = { "<cmd>nohlsearch<CR>", "NOHL" },
-    -- [";"] = { "<cmd>tabnew | terminal<CR>", "Term" },
     v = { "<cmd>vsplit<CR>", "Vertial split window" },
     s = { "<C-w>s", "Split window" },
     ["wc"] = { "<C-w>c", "Close window" },
