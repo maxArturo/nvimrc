@@ -14,7 +14,8 @@ wk.register {
     l = { "<cmd>:tabprevious<cr>", "Move Left" },
   },
   ["<leader>"] = {
-    ["bd"] = { "<cmd>:bunload<cr>", "Close current buffer" },
+    ["bd"] = { "<cmd>:bunload!<cr>", "Close current buffer" },
+    ["re"] = { "<cmd>:source $MYVIMRC<cr>", "reload config" },
     ["ba"] = { "<cmd>:bufdo bd<cr>", "close all buffers" },
     ["l"] = { "<cmd>:bnext<cr>", "Next buffer" },
     ["h"] = { "<cmd>:bprevious<cr>", "Prev buffer" },
