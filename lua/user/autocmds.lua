@@ -40,14 +40,14 @@ local no_list_buf = {
   "tsplayground",
 }
 
-local quick_exit = no_list_buf .. {
+local quick_exit_only = {
   "fugitive",
   "",
 }
 
 -- quick exit 
 vim.api.nvim_create_autocmd({ "FileType" }, {
-  pattern = quick_exit,
+  pattern = Merge(no_list_buf, quick_exit_only),
   callback = function()
     vim.cmd [[
       nnoremap <silent> <buffer> q :close<CR>

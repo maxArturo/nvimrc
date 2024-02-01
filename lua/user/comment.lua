@@ -1,3 +1,7 @@
+-- N.B. 
+-- References to nvim-ts-context-commentstring refer to a plugin
+-- to comment out jsx/tsx
+
 local M = {
   "numToStr/Comment.nvim",
   lazy = false,

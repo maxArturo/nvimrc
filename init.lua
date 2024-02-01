@@ -1,3 +1,4 @@
+require "user.util"   --validated
 require "user.launch"   --validated
 require "user.options"  --validated
 require "user.leader"   --validated
@@ -19,12 +20,13 @@ spec "user.toggleterm"
 spec "user.treesitter"
 spec "user.mason"
 spec "user.lspconfig"
--- spec "user.schemastore"
--- spec "user.cmp"
--- spec "user.none-ls"
--- spec "user.comment" -- not touching this for now, it should work with treesitter later
--- spec "user.indentline" -- not touching this for now, it should work with treesitter later
+spec "user.schemastore"
+spec "user.cmp"
+spec "user.none-ls"
+spec "user.comment"
 -- spec "user.neotest"
+spec "user.indentline"
 require "user.lazy"
 require "user.keymaps"
 require "user.autocmds"
+
