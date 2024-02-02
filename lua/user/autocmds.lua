@@ -107,3 +107,21 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   end,
 })
 
+-- set lisp local leader
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+  pattern = { "lisp" },
+  callback = function()
+    vim.g.maplocalleader = ";"
+  end,
+})
+
+-- and this reverts the local leader
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+    pattern = { "*" },
+    callback = function()
+        if vim.bo.filetype ~= "lisp" then
+            return
+        end
+    vim.g.maplocalleader = ","
+    end,
+})
