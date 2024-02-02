@@ -1,11 +1,12 @@
-require "user.util"   --validated
-require "user.launch"   --validated
-require "user.options"  --validated
-require "user.leader"   --validated
+require "user.util"
+require "user.launch"
+require "user.options"
+require "user.pluginopts"
+require "user.leader"
 spec "user.whichkey"
-spec "user.colorscheme" --validated
-spec "user.devicons"    --validated
-spec "user.telescope" -- need re-evaluate hotkeys
+spec "user.colorscheme"
+spec "user.devicons"
+spec "user.telescope"
 spec "user.illuminate"
 spec "user.nvimtree"
 spec "user.lualine"
@@ -23,8 +24,8 @@ spec "user.schemastore"
 spec "user.cmp"
 spec "user.none-ls"
 spec "user.comment"
-spec "user.slimv"
 spec "user.trouble"
+spec "user.nvlime"
 -- spec "user.neotest"
 spec "user.indentline"
 require "user.lazy"

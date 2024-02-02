@@ -137,6 +137,7 @@ function M.config()
     sources = {
       { name = "copilot" },
       { name = "nvim_lsp" },
+      { name = "nvlime" },
       { name = "luasnip" },
       { name = "cmp_tabnine" },
       { name = "nvim_lua" },

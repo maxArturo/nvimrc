@@ -38,7 +38,7 @@ vim.opt.scrolloff = 10
 vim.opt.sidescrolloff = 8
 vim.opt.guifont = "monospace:h17" -- the font used in graphical neovim applications
 vim.opt.title = false
-vim.opt.colorcolumn = "80,120"
+-- vim.opt.colorcolumn = "80,120"
 vim.opt.fillchars = vim.opt.fillchars + "eob: "
 vim.opt.fillchars:append {
   stl = " ",
@@ -51,5 +51,3 @@ vim.cmd [[set iskeyword+=-]]
 
 vim.g.netrw_banner = 0
 vim.g.netrw_mouse = 2
-vim.g.slimv_leader = ";"
-
