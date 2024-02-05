@@ -137,7 +137,6 @@ function M.config()
     sources = {
       { name = "copilot" },
       { name = "nvim_lsp" },
-      { name = "nvlime" },
       { name = "luasnip" },
       { name = "cmp_tabnine" },
       { name = "nvim_lua" },
@@ -163,6 +162,13 @@ function M.config()
       ghost_text = false,
     },
   }
+
+  cmp.setup.filetype({'lisp'}, {
+    sources = {
+      { name = 'nvlime' }
+      -- other sources like path or buffer, etc.
+    }
+  })
 end
 
 return M

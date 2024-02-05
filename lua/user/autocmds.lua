@@ -1,30 +1,3 @@
--- vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
---   callback = function()
---     vim.cmd "set formatoptions-=cro"
---   end,
--- })
-
--- vim.api.nvim_create_autocmd({ "CmdWinEnter" }, {
---   callback = function()
---     vim.cmd "quit"
---   end,
--- })
-
--- vim.api.nvim_create_autocmd({ "CursorHold" }, {
---   callback = function()
---     local status_ok, luasnip = pcall(require, "luasnip")
---     if not status_ok then
---       return
---     end
---     if luasnip.expand_or_jumpable() then
---       -- ask maintainer for option to make this silent
---       -- luasnip.unlink_current()
---       vim.cmd [[silent! lua require("luasnip").unlink_current()]]
---     end
---   end,
--- })
-
-
 local no_list_buf = {
   "netrw",
   "Jaq",
@@ -112,6 +85,14 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
   pattern = { "lisp" },
   callback = function()
     vim.g.maplocalleader = ";"
+  end,
+})
+
+-- set lisp repl relative lines
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+  pattern = { "nvlime_sldb" },
+  callback = function()
+    vim.opt.relativenumber = true
   end,
 })
 

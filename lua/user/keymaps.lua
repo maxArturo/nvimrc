@@ -19,7 +19,7 @@ wk.register {
     ["ba"] = { "<cmd>:bufdo bd<cr>", "close all buffers" },
     ["l"] = { "<cmd>:bnext<cr>", "Next buffer" },
     ["h"] = { "<cmd>:bprevious<cr>", "Prev buffer" },
-    ["w"] = { "<cmd>:wa!<cr>", "write all files" },
+    ["w"] = { "<cmd>:w<cr>", "write all files" },
   },
   ["<c-h>"] = { "<C-w>h", "Move to left window"},
   ["<c-j>"] = { "<C-w>j", "Move to right window"},
@@ -30,7 +30,7 @@ wk.register {
   ["n"] = {"nzz",  "search next occurrence" },
   ["N"] = {"Nzz",  "search prev occurrence" },
   ["*"] = {"*zz",  "search for current string udner cursor"},
-} 
+}
 
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
