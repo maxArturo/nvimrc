@@ -9,6 +9,7 @@ function M.config()
     ensure_installed = { 
       "lua", 
       "vim",
+      "rust",
       "vimdoc",
       "markdown", 
       "markdown_inline", 
