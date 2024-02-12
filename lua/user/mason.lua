@@ -6,20 +6,21 @@ local M = {
 }
 
 function M.config()
-  local servers = {
-    "lua_ls",
-    "cssls",
-    "html",
-    "tsserver",
-    "pyright",
-    "bashls",
-    "jsonls",
-  }
-
   require("mason").setup {
     ui = {
       border = "rounded",
     },
+  }
+
+  local servers = {
+    "lua_ls",
+    "cssls",
+    "html",
+    "rust_analyzer",
+    "tsserver",
+    "pyright",
+    "bashls",
+    "jsonls",
   }
 
   require("mason-lspconfig").setup {
