@@ -10,6 +10,7 @@ function M.config()
       "lua", 
       "vim",
       "rust",
+      "commonlisp",
       "vimdoc",
       "markdown", 
       "markdown_inline", 

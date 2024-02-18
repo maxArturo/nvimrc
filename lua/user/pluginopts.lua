@@ -40,10 +40,17 @@ vim.g.nvlime_config = {
     }
 
 vim.g.nvlime_mappings = {
+  global = {
+    normal = {
+      scroll_down = "<C-n>",
+    }
+  },
   lisp = {
     normal = {
       repl = {
         send_expr = nvlime_leader .. "e",
+        show = nvlime_leader .. "c",
+        clear = nvlime_leader .. "-"
       }
     }
   }

@@ -6,6 +6,7 @@ local M = {
   "monkoose/nvlime",
   dependencies = {
     "monkoose/parsley",
+    "vim-scripts/paredit.vim"
   },
   ft = "lisp",
   commit = "936df43"

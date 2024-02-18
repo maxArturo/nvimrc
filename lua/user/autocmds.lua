@@ -87,7 +87,7 @@ vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
   callback = function()
     vim.cmd "set foldmethod=expr"
     vim.cmd "set foldexpr=nvim_treesitter#foldexpr()"
-    vim.cmd "set nofoldenable" --disable folding at startup
+    vim.cmd "set foldenable" --enable folding at startup
   end,
 })
 

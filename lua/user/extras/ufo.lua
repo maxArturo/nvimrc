@@ -12,9 +12,7 @@ function M.config()
     setopt = true,
     relculright = true,
     segments = {
-
       { text = { builtin.foldfunc, " " }, click = "v:lua.ScFa", hl = "Comment" },
-
       { text = { "%s" }, click = "v:lua.ScSa" },
       { text = { builtin.lnumfunc, " " }, click = "v:lua.ScLa" },
     },
@@ -63,6 +61,7 @@ function M.config()
   local ftMap = {
     -- typescriptreact = { "lsp", "treesitter" },
     -- python = { "indent" },
+    lisp = { "indent" },
     -- git = "",
   }
 
