@@ -11,6 +11,7 @@ function M.config()
       "vim",
       "rust",
       "commonlisp",
+      "typescript",
       "vimdoc",
       "markdown", 
       "markdown_inline", 
