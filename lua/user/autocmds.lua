@@ -81,12 +81,12 @@ vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
   end,
 })
 
--- Set up tree-sitter based folding
-vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
-  pattern = { "*" },
+--Set up git folding 
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = { "git" },
   callback = function()
-    vim.cmd "set foldmethod=expr"
-    vim.cmd "set foldexpr=nvim_treesitter#foldexpr()"
+    vim.cmd "set foldmethod=syntax"
+    -- vim.cmd "set foldexpr=nvim_treesitter#foldexpr()"
     vim.cmd "set foldenable" --enable folding at startup
   end,
 })
